@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "cmdlite",
+  "version": "${version}",
+  "name": "CmdLite",
+  "description": "Turn long, complex Minecraft commands stored as .txt files into short, easy-to-use custom commands like /lite:<name>.",
+  "authors": [
+    "RC RAJA GAMER 2.0"
+  ],
+  "contact": {
+    "homepage": "https://rccraft.xo.je",
+    "issues": "https://github.com/rccraft/cmdlite/issues",
+    "youtube": "https://youtube.com/@RCRAJAGAMER2.0"
+  },
+  "license": "MIT",
+  "icon": "assets/cmdlite/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.rccraft.cmdlite.CmdLiteClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": "~26.1.2",
+    "java": ">=25"
+  }
+}

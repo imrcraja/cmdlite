@@ -1,47 +1,30 @@
 ---
-name: 🐛 Bug Report
-about: Report a problem or unexpected behavior in CmdLite
+name: Bug Report
+about: Something in CmdLite isn't working right
 title: "[BUG] "
 labels: bug
 assignees: ''
 ---
 
-## 🐛 Bug Description
+**Describe the bug**
+A clear description of what went wrong.
 
-Clearly describe what went wrong.
+**Steps to reproduce**
+1. Put this in a .txt file: ...
+2. Run '/lite:...'
+3. See error
 
-## 🔁 Steps to Reproduce
+**Expected behavior**
+What you expected to happen.
 
-1.
-2.
-3.
+**Minecraft / Mod versions**
+- Minecraft version:
+- Fabric Loader version:
+- Fabric API version:
+- CmdLite version:
 
-## ✅ Expected Behavior
+**Logs**
+Paste any relevant lines from latest.log, or attach the file.
 
-What did you expect CmdLite to do?
-
-## ❌ Actual Behavior
-
-What did CmdLite actually do?
-
-## 🎮 Minecraft Version
-
-Example: `26.1.2`
-
-## 🧩 Fabric Loader Version
-
-Example: `0.18.x`
-
-## 📦 CmdLite Version
-
-Example: `1.0.0`
-
-## 💻 Device / Platform
-
-Example: Android / Windows / Linux
-
-## 📜 Command or Shortcut
-
-If relevant, provide the command or `/lite:` shortcut:
-
-```text
+**Additional context**
+Anything else worth mentioning.

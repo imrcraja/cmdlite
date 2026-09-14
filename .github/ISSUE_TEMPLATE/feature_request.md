@@ -1,26 +1,19 @@
 ---
-name: 💡 Feature Request
-about: Suggest a new feature or improvement for CmdLite
+name: Feature Request
+about: Suggest an idea for CmdLite
 title: "[FEATURE] "
 labels: enhancement
 assignees: ''
 ---
 
-## 💡 Feature Description
+**What problem does this solve?**
+A clear description of what you're trying to do.
 
-Describe the feature you would like to see in CmdLite.
+**Describe the solution you'd like**
+What should CmdLite do?
 
-## 🤔 Why Is This Feature Useful?
+**Alternatives considered**
+Any other ways you thought about solving this.
 
-Explain what problem this feature would solve or how it would improve CmdLite.
-
-## 🛠️ Proposed Solution
-
-Describe how you think the feature could work.
-
-## 📝 Example
-
-If possible, show an example of how the feature could be used.
-
-```text
-/lite:example
+**Additional context**
+Anything else worth mentioning.
