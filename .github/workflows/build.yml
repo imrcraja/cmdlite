@@ -27,10 +27,11 @@ jobs:
           gradle-version: "9.4.0"
 
       - name: Build CmdLite
+        working-directory: cmdlite
         run: gradle build --no-daemon
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: CmdLite-JAR
-          path: build/libs/*.jar
+          path: cmdlite/build/libs/*.jar
