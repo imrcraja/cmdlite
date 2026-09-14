@@ -26,12 +26,33 @@ jobs:
         with:
           gradle-version: "9.4.0"
 
-      - name: Build CmdLite
-        working-directory: cmdlite
-        run: gradle build --no-daemon
+      - name: Find and build Gradle project
+        shell: bash
+        run: |
+          set -e
+
+          PROJECT_DIR=$(find . -name "build.gradle" -type f -print -quit | xargs dirname)
+
+          if [ -z "$PROJECT_DIR" ] || [ "$PROJECT_DIR" = "." ]; then
+            PROJECT_DIR="."
+          fi
+
+          echo "Gradle project found at: $PROJECT_DIR"
+
+          cd "$PROJECT_DIR"
+
+          echo "Building CmdLite..."
+          gradle build --no-daemon
+
+      - name: Find JAR
+        shell: bash
+        run: |
+          echo "Built JAR files:"
+          find . -path "*/build/libs/*.jar" -type f -print
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: CmdLite-JAR
-          path: cmdlite/build/libs/*.jar
+          path: "**/build/libs/*.jar"
+          if-no-files-found: error
